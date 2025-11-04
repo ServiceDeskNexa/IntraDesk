@@ -289,21 +289,22 @@
 
     <button class="menu-btn" data-toggle="submenu-aplicativos">Aplicativos</button>
     <div class="submenu" id="submenu-aplicativos">
-      <a href="https://autoserviciopwd.nexabpo.com:9251/authorization.do" target="_blank">ADSelf</a>
-      <a href="https://cariai.com/agentui/" target="_blank">Cari AI</a>
-      <a href="http://10.250.100.157/wcm/LoginEJS.aspx" target="_blank">Genesys Administrator</a>
-      <a href="http://10.32.2.11:443/UsersManagement/session?usuario=1016076221" target="_blank">Uno a uno</a>
-      <a href="http://10.32.4.160/dude/main.html" target="_blank">MikroTik DUDE</a>
-      <a href="https://nexabpo.educativo.co/login/index.php" target="_blank">Unix</a>
-      <a href="https://vpn4.nexabpo.com/dana-na/auth/url_admin/welcome.cgi" target="_blank">VPN4</a>
-      <a href="https://10.32.160.2/dana-na/auth/url_admin/welcome.cgi" target="_blank">VPN3</a>
+      <a href="https://autoserviciopwd.nexabpo.com:9251/authorization.do" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">ADSelf</a>
+      <a href="https://cariai.com/agentui/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Cari AI</a>
+      <a href="http://10.250.100.157/wcm/LoginEJS.aspx" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Genesys Administrator</a>
+      <a href="http://10.32.2.11:443/UsersManagement/session?usuario=1016076221" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Uno a uno</a>
+      <a href="http://10.32.4.160/dude/main.html" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">MikroTik DUDE</a>
+      <a href="https://nexabpo.educativo.co/login/index.php" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Unix</a>
+      <a href="https://vpn4.nexabpo.com/dana-na/auth/url_admin/welcome.cgi" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">VPN4</a>
+      <a href="https://10.32.160.2/dana-na/auth/url_admin/welcome.cgi" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">VPN3</a>
+      <a href="https://login.microsoftonline.com/10a76712-94f6-46a2-9155-31bd8b76f937/saml2?sso_reload=true" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">SMAX</a>
     </div>
 
     <button class="menu-btn" data-toggle="submenu-aplicativos-claro">Aplicativos Claro</button>
     <div class="submenu" id="submenu-aplicativos-claro">
-      <a href="https://claro1.com" target="_blank">VPN Claro</a>
-      <a href="https://claro2.com" target="_blank">Correo Zimbra</a>
-      <a href="https://claro3.com" target="_blank">Smax TI</a>
+      <a href="https://claro1.com" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">VPN Claro</a>
+      <a href="https://claro2.com" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Correo Zimbra</a>
+       
     </div>
 
     
@@ -400,9 +401,7 @@ function loadFormDoc(tipo) {
 
         <label>Nos complace informarle que hemos culminado su solicitud con los siguientes datos.<br></label>
         
-
-        
-        <label>Numero del ticket</label>
+        <label><br>Numero del ticket:</label>
         <input type="text" id="numCaso" placeholder="Número del caso">
 
         <label>Estado:</label>
@@ -416,13 +415,13 @@ function loadFormDoc(tipo) {
 
         <label>Acciones realizadas:</label>
         <input type="text" id="accionesRealizadas" placeholder="Acciones realizadas...">
-        <br>
+
         <label><br>Evidencias:</label>
 
-       <label><br></label>
+        <label><br><br></label>
         <select id="firmaResolucion">
-         <option>Seleccione una opción...</option> 
-         <option>Juan Marquez</option><option>Juan Rodriguez</option><option>Helber Bejarano</option>
+        <br><option>Seleccione una opción...</option>
+        <option>Juan Marquez</option><option>Juan Rodriguez</option><option>Helber Bejarano</option>
           <option>Ingrid Tejero</option><option>Andres Avila</option><option>Sergio Gil</option>
           <option>Jhon Rivas</option><option>Stiven Avila</option><option>Mairon Ortiz</option>
           <option>Leonardo Mendoza</option><option>Sebastian Ramirez</option><option>David Botero</option>
@@ -460,13 +459,12 @@ function loadFormDoc(tipo) {
 
         <label>Hola,</label>
         <input type="text" id="personaDuplicado" placeholder="Nombre de la persona afectada">
-        <label>Te informamos que el ticket</label>
-
-        <label>Número ticket (actual):</label>
-        <input type="text" id="ticketDuplicado" placeholder="Número del ticket">
-        <label> ha sido cerrado, ya que corresponde a un duplicado del ticket(ticket anterior):</label> 
+        <label>Te informamos que el ticket:</label>
+        <input type="text" id="ticketDuplicado" placeholder="Ticket actual">
+        <label>ha sido cerrado, ya que corresponde a un duplicado del ticket:</label>
         <input type="text" id="ticketAnterior" placeholder="Ticket anterior">
-        <label>  La solicitud será gestionada a través del ticket anterior.</label>
+        <label>La solicitud será gestionada a través del ticket anterior.</label>
+ 
 
        <Br><Br>
         <label><br></label>
